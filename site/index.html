@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Documentacion</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Documentaci\u00f3n de migraci\u00f3n y consideraciones de Odoo 18";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> Documentacion
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" title="Escriba el término de búsqueda aquí" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegación">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Documentación de migración y consideraciones de Odoo 18</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#configuraciones-iniciales">Configuraciones iniciales</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#empresa">Empresa</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#clientes">Clientes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#formato-de-numeros">Formato de números</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#metodos-de-pago">Métodos de pago</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#activacion-del-modo-quiosco">Activación del modo quiosco</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#migracion-de-productos">Migración de productos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#como-se-usa-como-se-hace">Cómo se usa / Cómo se hace</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#gastos">Gastos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#facturas-de-venta">Facturas de venta</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#facturas-de-compra">Facturas de compra</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#variantes-de-producto">Variantes de producto</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#particularidades">Particularidades</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#formato-de-pdf-en-facturas">Formato de PDF en facturas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cuadro-de-informacion-de-la-boleta">Cuadro de información de la boleta</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cuadro-de-factura-cedible">Cuadro de factura cedible</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menú de navegación en móvil">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">Documentacion</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Documentos"></a></li>
+      <li class="breadcrumb-item active">Documentación de migración y consideraciones de Odoo 18</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="documentacion-de-migracion-y-consideraciones-de-odoo-18">Documentación de migración y consideraciones de Odoo 18</h1>
+<h2 id="configuraciones-iniciales">Configuraciones iniciales</h2>
+<p>Una de las ventajas de trabajar en Odoo es que <em>casi todo es automático</em>, mientras se configure de forma apropiada.</p>
+<h3 id="empresa">Empresa</h3>
+<p>Para configurar la empresa, vas a <strong>Ajustes &gt; Usuario y empresas</strong> y elige la empresa.
+Rellena los campos.</p>
+<h3 id="clientes">Clientes</h3>
+<p>Ve a <strong>Contactos</strong>.</p>
+<h3 id="formato-de-numeros">Formato de números</h3>
+<p>Por defecto, todos los números se muestran con dos decimales. Para cambiar esto, ve a <strong>Ajustes</strong> y activa el <strong>Modo de desarrollador</strong> que se encuentra al fondo de la página.
+Luego, vas al submenú <strong>Técnico &gt; Precisión decimal</strong>.</p>
+<h3 id="metodos-de-pago">Métodos de pago</h3>
+<p>Recordar agregar más metodos de pago en <strong>Ajustes &gt; Punto de Venta &gt; Pago &gt; Métodos de pago</strong>, ya que viene solamente el pago con tarjeta de forma predeterminada.</p>
+<h3 id="activacion-del-modo-quiosco">Activación del modo quiosco</h3>
+<p>Para activar el modo quiosco, ve a <strong>Ajustes &gt; Punto de venta</strong>, activar la opción <em>Es un bar/restaurante</em> y guardar los cambios. Tras esto deberia aparecer el submenú de <em>Autopedidos por celular y quioscos</em>.
+Si la empresa no es un bar/restaurate, se puede desactivar esa opción y guardar los cambios y la opcóon de autopedidos quedara ahí. </p>
+<p><em>// Nota de editor: no sé por que pasa todo esto es muy engorroso.</em></p>
+<h2 id="migracion-de-productos">Migración de productos</h2>
+<p><strong><em>// En proceso</em></strong>
+Entra a <strong>Inventario &gt; Productos</strong>. Si se tiene la vista de los productos en modo Kanban (en cuadros), cámbiala a lista.
+En el engranaje, debe de aparecer la opción "exportar todo". Esto descargará un archivo .xlsx con todos los productos.
+Luego, en la otra base de datos, ve a <strong>Punto de Venta &gt; Productos</strong>[^1] y en el engranaje selecciona "Importar registros". Ahí puedes subir un archivo de datos tipo .xlsx (Excel) o .csv.</p>
+<p>[^1]: Para que todos los productos importados se muestren en cualquier punto de venta, es mejor importar los productos tomando ese camino y no por cualquier otro (e.j.: Inventario &gt; Productos). Si se hace de otra manera, el producto importado no tendrá activado la opción "Punto de Venta", el cual hace visible el producto en dicho módulo. Claro, esto se puede cambiar accediento al producto y activando tal opción, pero es engorroso cuando hablamos de cientos de productos.</p>
+<h2 id="como-se-usa-como-se-hace">Cómo se usa / Cómo se hace</h2>
+<h3 id="gastos">Gastos</h3>
+<p>Para realizar un reembolso, puedes subir una foto de la boleta. También se puede rellenar de forma manual, pero sale más rápido con la foto de la boleta.</p>
+<h3 id="facturas-de-venta">Facturas de venta</h3>
+<p>Primero se debe de realizar un pedido de venta antes de realizar alguna factura. Esto se puede hacer en <strong>Ventas</strong>. Tras hacer el pedido, aparecerá el botón de creación de facturas.</p>
+<h3 id="facturas-de-compra">Facturas de compra</h3>
+<p>Para realizar una factura de compra, se debe de realizar una solicitud de compra y confirmar la entrega de los productos. Ve a <strong>Compra</strong> y realiza una compra. Antes de realizar la factura, primero debes de confirmar el recibimiento de los productos pedidos.
+Si ya confirmaste el inventario recibido, puedes volver al menú de solicitudes de presupuesto y seleccionar el pedido el cual se quiere realizar la factura.</p>
+<h3 id="variantes-de-producto">Variantes de producto</h3>
+<p>Ve a <strong>Ajustes &gt; Inventario</strong> y activa la opción "Variantes"</p>
+<h2 id="particularidades">Particularidades</h2>
+<h3 id="formato-de-pdf-en-facturas">Formato de PDF en facturas</h3>
+<p>A pesar de que debería ser automático, puede ser que ocurra un error (desconocido hasta el momento) y no sé cambie el formato del PDF de la factura al formato que pide el SII.
+Para esto, hay que <strong>abrir Studio</strong> e ingresar a cualquier aplicación. Luego, ir a <strong>Reportes</strong>, sacar el filtro automático y seleccionar <em>PDF</em>, el cual es el que se utiliza para mostrar una factura.
+Vas a <strong>EDITAR FUENTES</strong>, luego ve a <em>report_invoice (l10n_cl.report_invoice)</em> y copia y pega el siguiente código.</p>
+<pre><code class="language-html">&lt;data inherit_id=&quot;account.report_invoice&quot;&gt;
+        &lt;!-- xpath expr=&quot;//t[@t-call='account.report_invoice_document']&quot; position=&quot;after&quot;--&gt;
+            &lt;!--t t-if=&quot;o._get_name_invoice_report() == 'l10n_cl.report_invoice_document'&quot; t-call=&quot;l10n_cl.report_invoice_document&quot; t-lang=&quot;lang&quot;/--&gt;
+        &lt;!--/xpath--&gt;
+&lt;/data&gt;
+</code></pre>
+<p>Luego, ve a <em>report_invoice (account.report_invoice)</em> y copia y pega lo siguente:</p>
+<pre><code class="language-html">&lt;t t-name=&quot;account.report_invoice&quot;&gt;
+            &lt;t t-call=&quot;web.html_container&quot;&gt;
+                &lt;t t-foreach=&quot;docs&quot; t-as=&quot;o&quot;&gt;
+                    &lt;t t-set=&quot;lang&quot; t-value=&quot;o.partner_id.lang&quot;/&gt;
+                    &lt;t t-call=&quot;l10n_cl.report_invoice_document&quot; t-lang=&quot;lang&quot;/&gt;
+                &lt;/t&gt;
+            &lt;/t&gt;
+        &lt;/t&gt;
+</code></pre>
+<p>Si todo esta correcto, deberá mostrarse el formato correcto en la factura.</p>
+<h3 id="cuadro-de-informacion-de-la-boleta">Cuadro de información de la boleta</h3>
+<p>Hay veces que en el cuadro superior derecha no aparezca el tipo de factura, así como sale en la imagen.</p>
+<p><img alt="tabladeinformacion" src="tabladeinformacion.png" /></p>
+<p>Primero, asegúrate de que agregaste el tipo de factura a la hora de realizarla, ya que ese puede ser tú error, pero si lo hiciste e igual no aparece el tipo de factura, entonces realiza lo siguiente:
+Activa el Modo de Desarrollador escribiendo <code>?debug=1</code> al final del link. Luego, ve a <strong>Ajustes &gt; Técnico &gt; Vistas</strong>, busca "<em>custom_header</em>" y entra el que tiene ID Externo <em>l10n_cl.custom_header</em>. Luego, edita la línea 6 tal que quede así</p>
+<pre><code class="language-html">        ...
+        &lt;t t-set=&quot;report_name&quot; t-value=&quot;o.l10n_cl_reference_ids.l10n_cl_reference_doc_type_id.name&quot;/&gt;
+        ...
+</code></pre>
+<p>Tras esto, debería estar todo listo. Realiza una factura para asegurarse.</p>
+<h3 id="cuadro-de-factura-cedible">Cuadro de factura cedible</h3>
+<p>Sigue los mismos pasos para acceder al PDF de la factura y editar su fuente. En "<em>report_invoice_document (l10n_cl.report_invoice_document)</em>", copia y pega lo siguiente antes de la última línea:</p>
+<pre><code class="language-html">        &lt;xpath expr=&quot;//div[@id='right-elements']&quot; position=&quot;after&quot;&gt;
+            &lt;div&gt;
+              &lt;div t-if=&quot;o.l10n_cl_reference_ids.l10n_cl_reference_doc_type_id.code == '34'&quot; style=&quot;line-height:15px&quot;&gt;
+                  &lt;div style=&quot;border: 3px solid black; padding: 10px; width: 200px; height:auto; &quot;&gt;
+                  &lt;div&gt;
+                      &lt;p&gt;&lt;strong&gt;Nombre:&lt;/strong&gt; _____________________&lt;/p&gt;
+                      &lt;p&gt;&lt;strong&gt;Rut:&lt;/strong&gt; __________________________&lt;/p&gt;
+                      &lt;p&gt;&lt;strong&gt;Fecha:&lt;/strong&gt; ________________________&lt;/p&gt;
+                      &lt;p&gt;&lt;strong&gt;Recinto:&lt;/strong&gt; ______________________&lt;/p&gt;
+                      &lt;p&gt;&lt;strong&gt;Firma:&lt;/strong&gt; ________________________&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div style=&quot;&quot;&gt;
+                      &lt;p&gt;&lt;i&gt;El acuse de recibo que se declara en este acto, de acuerdo a lo dispuesto en la letra b) del Art. 4°, y la letra c) del Art. 5° de la Ley 19.983, acredita que la entrega de mercaderías o servicio(s) prestado(s) ha(n) sido recibidos.&lt;/i&gt;&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div style=&quot;text-align:right; font-size:105%; margin-top:-15px&quot;&gt;
+                      &lt;strong&gt;CEDIBLE&lt;/strong&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+                          &lt;/div&gt;
+              &lt;div t-else=&quot;&quot;&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/xpath&gt;
+</code></pre>
+<p><img alt="cuadrodecedible.png" src="cuadrodecedible.png" /></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Construído con <a href="https://www.mkdocs.org/">MkDocs</a> usando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> provisto por <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versiones">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-03-05 18:01:31.750743+00:00
+-->
